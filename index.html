@@ -11,9 +11,9 @@
   <div class="app">
 
     <h1>🏋️ Fitness Scheduler</h1>
-
     <p class="subtitle">Plan your Monday–Friday workouts</p>
 
+    <!-- DAYS -->
     <div class="days">
       <button>Mon</button>
       <button>Tue</button>
@@ -22,11 +22,20 @@
       <button>Fri</button>
     </div>
 
+    <!-- 📊 DASHBOARD -->
+    <div class="panel">
+      <h2>📊 Weekly Progress</h2>
+      <p id="totalWorkouts">Total Workouts: 0</p>
+      <p id="totalExercises">Total Exercises: 0</p>
+    </div>
+
+    <!-- WORKOUT DISPLAY -->
     <div class="panel">
       <h2>Today's Workout</h2>
       <p>No workouts added yet</p>
     </div>
 
+    <!-- ADD WORKOUT -->
     <div class="panel">
       <h2>Add Exercise</h2>
 
@@ -35,6 +44,18 @@
       <input placeholder="Reps" />
 
       <button class="add-btn">Add Workout</button>
+    </div>
+
+    <!-- ⏱ GYM TIMER -->
+    <div class="panel">
+      <h2>⏱ Gym Timer</h2>
+
+      <div id="timerDisplay" style="font-size:26px; margin:10px 0;">60</div>
+
+      <button onclick="startTimer(30)">30s</button>
+      <button onclick="startTimer(60)">60s</button>
+      <button onclick="startTimer(90)">90s</button>
+      <button onclick="resetTimer()">Reset</button>
     </div>
 
   </div>
