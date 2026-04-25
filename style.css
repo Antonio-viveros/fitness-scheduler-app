@@ -1,64 +1,125 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: #0b1220;
+  color: #e5e7eb;
 }
 
 .app {
-  max-width: 500px;
+  max-width: 520px;
   margin: auto;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
+  font-size: 26px;
   margin-bottom: 5px;
 }
 
 .subtitle {
   text-align: center;
   color: #94a3b8;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
+/* DAY BUTTONS */
 .days {
   display: flex;
-  justify-content: space-between;
+  gap: 6px;
   margin-bottom: 20px;
 }
 
 .days button {
   flex: 1;
-  margin: 2px;
   padding: 10px;
-  background: #1e293b;
-  color: white;
+  border-radius: 10px;
   border: none;
-  border-radius: 8px;
+  background: #1f2937;
+  color: #e5e7eb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
+.days button:hover {
+  background: #334155;
+  transform: translateY(-1px);
+}
+
+/* PANELS */
 .panel {
-  background: #1e293b;
-  padding: 15px;
-  border-radius: 12px;
+  background: #111827;
+  padding: 16px;
+  border-radius: 14px;
   margin-bottom: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
+.panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #f1f5f9;
+}
+
+/* INPUTS */
 input {
   width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 8px;
-  border: none;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  background: #0b1220;
+  color: white;
+  outline: none;
 }
 
+input:focus {
+  border-color: #3b82f6;
+}
+
+/* ADD BUTTON */
 .add-btn {
   width: 100%;
-  padding: 10px;
-  background: #2563eb;
+  padding: 12px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* WORKOUT CARD */
+.workout {
+  background: #0b1220;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+.workout strong {
+  font-size: 15px;
+}
+
+.workout button {
+  margin-top: 8px;
+  background: #ef4444;
+  border: none;
+  padding: 6px 10px;
   border-radius: 8px;
   color: white;
-  margin-top: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.workout button:hover {
+  background: #dc2626;
 }
